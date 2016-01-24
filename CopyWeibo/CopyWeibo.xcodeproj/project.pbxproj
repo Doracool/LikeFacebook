@@ -1,0 +1,682 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC63AA1D1C54930400F839C1 /* QYTabbarVIewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC63AA1C1C54930400F839C1 /* QYTabbarVIewController.m */; };
+		CC63AA2C1C54950B00F839C1 /* QYHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC63AA2B1C54950B00F839C1 /* QYHomeViewController.m */; };
+		CC63AA2F1C54952200F839C1 /* QYMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC63AA2E1C54952200F839C1 /* QYMessageViewController.m */; };
+		CC63AA321C54952F00F839C1 /* QYMoerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC63AA311C54952F00F839C1 /* QYMoerViewController.m */; };
+		CC63AA351C54953D00F839C1 /* QYFindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC63AA341C54953D00F839C1 /* QYFindViewController.m */; };
+		CC63AA381C5495A500F839C1 /* QYSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC63AA371C5495A500F839C1 /* QYSettingViewController.m */; };
+		CC63AA3C1C54B6DC00F839C1 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CC63AA3B1C54B6DC00F839C1 /* UIView+Extension.m */; };
+		CC63AA3F1C54C1E800F839C1 /* QYNavcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = CC63AA3E1C54C1E800F839C1 /* QYNavcontroller.m */; };
+		CC63AA431C54C32100F839C1 /* QYTese1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC63AA411C54C32100F839C1 /* QYTese1ViewController.m */; };
+		CC63AA441C54C32100F839C1 /* QYTese1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC63AA421C54C32100F839C1 /* QYTese1ViewController.xib */; };
+		CC63AA481C54C48B00F839C1 /* QYTest2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC63AA461C54C48B00F839C1 /* QYTest2ViewController.m */; };
+		CC63AA491C54C48B00F839C1 /* QYTest2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC63AA471C54C48B00F839C1 /* QYTest2ViewController.xib */; };
+		CC63AA4D1C54C49A00F839C1 /* QYTest3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC63AA4B1C54C49A00F839C1 /* QYTest3ViewController.m */; };
+		CC63AA4E1C54C49A00F839C1 /* QYTest3ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC63AA4C1C54C49A00F839C1 /* QYTest3ViewController.xib */; };
+		CCFC5C501C53A16300993E6D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFC5C4F1C53A16300993E6D /* main.m */; };
+		CCFC5C531C53A16300993E6D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFC5C521C53A16300993E6D /* AppDelegate.m */; };
+		CCFC5C561C53A16300993E6D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFC5C551C53A16300993E6D /* ViewController.m */; };
+		CCFC5C591C53A16300993E6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCFC5C571C53A16300993E6D /* Main.storyboard */; };
+		CCFC5C5B1C53A16300993E6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCFC5C5A1C53A16300993E6D /* Assets.xcassets */; };
+		CCFC5C5E1C53A16300993E6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCFC5C5C1C53A16300993E6D /* LaunchScreen.storyboard */; };
+		CCFC5C691C53A16300993E6D /* CopyWeiboTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFC5C681C53A16300993E6D /* CopyWeiboTests.m */; };
+		CCFC5C741C53A16300993E6D /* CopyWeiboUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFC5C731C53A16300993E6D /* CopyWeiboUITests.m */; };
+		CCFC5C951C53ACEF00993E6D /* tabbar_compose_icon_add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCFC5C831C53ACEF00993E6D /* tabbar_compose_icon_add@2x.png */; };
+		CCFC5C961C53ACEF00993E6D /* tabbar_compose_icon_add@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCFC5C841C53ACEF00993E6D /* tabbar_compose_icon_add@3x.png */; };
+		CCFC5C971C53ACEF00993E6D /* tabbar_discover.png in Resources */ = {isa = PBXBuildFile; fileRef = CCFC5C851C53ACEF00993E6D /* tabbar_discover.png */; };
+		CCFC5C981C53ACEF00993E6D /* tabbar_discover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCFC5C861C53ACEF00993E6D /* tabbar_discover@2x.png */; };
+		CCFC5C991C53ACEF00993E6D /* tabbar_discover_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = CCFC5C871C53ACEF00993E6D /* tabbar_discover_selected.png */; };
+		CCFC5C9A1C53ACEF00993E6D /* tabbar_discover_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCFC5C881C53ACEF00993E6D /* tabbar_discover_selected@2x.png */; };
+		CCFC5C9B1C53ACEF00993E6D /* tabbar_home.png in Resources */ = {isa = PBXBuildFile; fileRef = CCFC5C891C53ACEF00993E6D /* tabbar_home.png */; };
+		CCFC5C9C1C53ACEF00993E6D /* tabbar_home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCFC5C8A1C53ACEF00993E6D /* tabbar_home@2x.png */; };
+		CCFC5C9D1C53ACEF00993E6D /* tabbar_home_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = CCFC5C8B1C53ACEF00993E6D /* tabbar_home_selected.png */; };
+		CCFC5C9E1C53ACEF00993E6D /* tabbar_home_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCFC5C8C1C53ACEF00993E6D /* tabbar_home_selected@2x.png */; };
+		CCFC5C9F1C53ACEF00993E6D /* tabbar_message_center.png in Resources */ = {isa = PBXBuildFile; fileRef = CCFC5C8D1C53ACEF00993E6D /* tabbar_message_center.png */; };
+		CCFC5CA01C53ACEF00993E6D /* tabbar_message_center@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCFC5C8E1C53ACEF00993E6D /* tabbar_message_center@2x.png */; };
+		CCFC5CA11C53ACEF00993E6D /* tabbar_message_center_highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = CCFC5C8F1C53ACEF00993E6D /* tabbar_message_center_highlighted.png */; };
+		CCFC5CA21C53ACEF00993E6D /* tabbar_message_center_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCFC5C901C53ACEF00993E6D /* tabbar_message_center_selected@2x.png */; };
+		CCFC5CA31C53ACEF00993E6D /* tabbar_profile.png in Resources */ = {isa = PBXBuildFile; fileRef = CCFC5C911C53ACEF00993E6D /* tabbar_profile.png */; };
+		CCFC5CA41C53ACEF00993E6D /* tabbar_profile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCFC5C921C53ACEF00993E6D /* tabbar_profile@2x.png */; };
+		CCFC5CA51C53ACEF00993E6D /* tabbar_profile_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = CCFC5C931C53ACEF00993E6D /* tabbar_profile_selected.png */; };
+		CCFC5CA61C53ACEF00993E6D /* tabbar_profile_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCFC5C941C53ACEF00993E6D /* tabbar_profile_selected@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CCFC5C651C53A16300993E6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCFC5C431C53A16300993E6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCFC5C4A1C53A16300993E6D;
+			remoteInfo = CopyWeibo;
+		};
+		CCFC5C701C53A16300993E6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCFC5C431C53A16300993E6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCFC5C4A1C53A16300993E6D;
+			remoteInfo = CopyWeibo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CC63AA1B1C54930400F839C1 /* QYTabbarVIewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYTabbarVIewController.h; sourceTree = "<group>"; };
+		CC63AA1C1C54930400F839C1 /* QYTabbarVIewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QYTabbarVIewController.m; sourceTree = "<group>"; };
+		CC63AA2A1C54950B00F839C1 /* QYHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYHomeViewController.h; sourceTree = "<group>"; };
+		CC63AA2B1C54950B00F839C1 /* QYHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QYHomeViewController.m; sourceTree = "<group>"; };
+		CC63AA2D1C54952200F839C1 /* QYMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYMessageViewController.h; sourceTree = "<group>"; };
+		CC63AA2E1C54952200F839C1 /* QYMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QYMessageViewController.m; sourceTree = "<group>"; };
+		CC63AA301C54952F00F839C1 /* QYMoerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYMoerViewController.h; sourceTree = "<group>"; };
+		CC63AA311C54952F00F839C1 /* QYMoerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QYMoerViewController.m; sourceTree = "<group>"; };
+		CC63AA331C54953D00F839C1 /* QYFindViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYFindViewController.h; sourceTree = "<group>"; };
+		CC63AA341C54953D00F839C1 /* QYFindViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QYFindViewController.m; sourceTree = "<group>"; };
+		CC63AA361C5495A500F839C1 /* QYSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYSettingViewController.h; sourceTree = "<group>"; };
+		CC63AA371C5495A500F839C1 /* QYSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QYSettingViewController.m; sourceTree = "<group>"; };
+		CC63AA3A1C54B6DC00F839C1 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		CC63AA3B1C54B6DC00F839C1 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		CC63AA3D1C54C1E800F839C1 /* QYNavcontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYNavcontroller.h; sourceTree = "<group>"; };
+		CC63AA3E1C54C1E800F839C1 /* QYNavcontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QYNavcontroller.m; sourceTree = "<group>"; };
+		CC63AA401C54C32100F839C1 /* QYTese1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYTese1ViewController.h; sourceTree = "<group>"; };
+		CC63AA411C54C32100F839C1 /* QYTese1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QYTese1ViewController.m; sourceTree = "<group>"; };
+		CC63AA421C54C32100F839C1 /* QYTese1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QYTese1ViewController.xib; sourceTree = "<group>"; };
+		CC63AA451C54C48B00F839C1 /* QYTest2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYTest2ViewController.h; sourceTree = "<group>"; };
+		CC63AA461C54C48B00F839C1 /* QYTest2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QYTest2ViewController.m; sourceTree = "<group>"; };
+		CC63AA471C54C48B00F839C1 /* QYTest2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QYTest2ViewController.xib; sourceTree = "<group>"; };
+		CC63AA4A1C54C49A00F839C1 /* QYTest3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYTest3ViewController.h; sourceTree = "<group>"; };
+		CC63AA4B1C54C49A00F839C1 /* QYTest3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QYTest3ViewController.m; sourceTree = "<group>"; };
+		CC63AA4C1C54C49A00F839C1 /* QYTest3ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QYTest3ViewController.xib; sourceTree = "<group>"; };
+		CCFC5C4B1C53A16300993E6D /* CopyWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CopyWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCFC5C4F1C53A16300993E6D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CCFC5C511C53A16300993E6D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CCFC5C521C53A16300993E6D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CCFC5C541C53A16300993E6D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CCFC5C551C53A16300993E6D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CCFC5C581C53A16300993E6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CCFC5C5A1C53A16300993E6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CCFC5C5D1C53A16300993E6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CCFC5C5F1C53A16300993E6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCFC5C641C53A16300993E6D /* CopyWeiboTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CopyWeiboTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCFC5C681C53A16300993E6D /* CopyWeiboTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CopyWeiboTests.m; sourceTree = "<group>"; };
+		CCFC5C6A1C53A16300993E6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCFC5C6F1C53A16300993E6D /* CopyWeiboUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CopyWeiboUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCFC5C731C53A16300993E6D /* CopyWeiboUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CopyWeiboUITests.m; sourceTree = "<group>"; };
+		CCFC5C751C53A16300993E6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCFC5C811C53A98700993E6D /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		CCFC5C831C53ACEF00993E6D /* tabbar_compose_icon_add@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_compose_icon_add@2x.png"; sourceTree = "<group>"; };
+		CCFC5C841C53ACEF00993E6D /* tabbar_compose_icon_add@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_compose_icon_add@3x.png"; sourceTree = "<group>"; };
+		CCFC5C851C53ACEF00993E6D /* tabbar_discover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar_discover.png; sourceTree = "<group>"; };
+		CCFC5C861C53ACEF00993E6D /* tabbar_discover@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_discover@2x.png"; sourceTree = "<group>"; };
+		CCFC5C871C53ACEF00993E6D /* tabbar_discover_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar_discover_selected.png; sourceTree = "<group>"; };
+		CCFC5C881C53ACEF00993E6D /* tabbar_discover_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_discover_selected@2x.png"; sourceTree = "<group>"; };
+		CCFC5C891C53ACEF00993E6D /* tabbar_home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar_home.png; sourceTree = "<group>"; };
+		CCFC5C8A1C53ACEF00993E6D /* tabbar_home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_home@2x.png"; sourceTree = "<group>"; };
+		CCFC5C8B1C53ACEF00993E6D /* tabbar_home_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar_home_selected.png; sourceTree = "<group>"; };
+		CCFC5C8C1C53ACEF00993E6D /* tabbar_home_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_home_selected@2x.png"; sourceTree = "<group>"; };
+		CCFC5C8D1C53ACEF00993E6D /* tabbar_message_center.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar_message_center.png; sourceTree = "<group>"; };
+		CCFC5C8E1C53ACEF00993E6D /* tabbar_message_center@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_message_center@2x.png"; sourceTree = "<group>"; };
+		CCFC5C8F1C53ACEF00993E6D /* tabbar_message_center_highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar_message_center_highlighted.png; sourceTree = "<group>"; };
+		CCFC5C901C53ACEF00993E6D /* tabbar_message_center_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_message_center_selected@2x.png"; sourceTree = "<group>"; };
+		CCFC5C911C53ACEF00993E6D /* tabbar_profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar_profile.png; sourceTree = "<group>"; };
+		CCFC5C921C53ACEF00993E6D /* tabbar_profile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_profile@2x.png"; sourceTree = "<group>"; };
+		CCFC5C931C53ACEF00993E6D /* tabbar_profile_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar_profile_selected.png; sourceTree = "<group>"; };
+		CCFC5C941C53ACEF00993E6D /* tabbar_profile_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_profile_selected@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CCFC5C481C53A16300993E6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCFC5C611C53A16300993E6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCFC5C6C1C53A16300993E6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CCFC5C421C53A16300993E6D = {
+			isa = PBXGroup;
+			children = (
+				CCFC5C4D1C53A16300993E6D /* CopyWeibo */,
+				CCFC5C671C53A16300993E6D /* CopyWeiboTests */,
+				CCFC5C721C53A16300993E6D /* CopyWeiboUITests */,
+				CCFC5C4C1C53A16300993E6D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CCFC5C4C1C53A16300993E6D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCFC5C4B1C53A16300993E6D /* CopyWeibo.app */,
+				CCFC5C641C53A16300993E6D /* CopyWeiboTests.xctest */,
+				CCFC5C6F1C53A16300993E6D /* CopyWeiboUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCFC5C4D1C53A16300993E6D /* CopyWeibo */ = {
+			isa = PBXGroup;
+			children = (
+				CCFC5C511C53A16300993E6D /* AppDelegate.h */,
+				CCFC5C521C53A16300993E6D /* AppDelegate.m */,
+				CCFC5C541C53A16300993E6D /* ViewController.h */,
+				CCFC5C551C53A16300993E6D /* ViewController.m */,
+				CC63AA1B1C54930400F839C1 /* QYTabbarVIewController.h */,
+				CC63AA1C1C54930400F839C1 /* QYTabbarVIewController.m */,
+				CC63AA2A1C54950B00F839C1 /* QYHomeViewController.h */,
+				CC63AA2B1C54950B00F839C1 /* QYHomeViewController.m */,
+				CC63AA2D1C54952200F839C1 /* QYMessageViewController.h */,
+				CC63AA2E1C54952200F839C1 /* QYMessageViewController.m */,
+				CC63AA301C54952F00F839C1 /* QYMoerViewController.h */,
+				CC63AA311C54952F00F839C1 /* QYMoerViewController.m */,
+				CC63AA331C54953D00F839C1 /* QYFindViewController.h */,
+				CC63AA341C54953D00F839C1 /* QYFindViewController.m */,
+				CC63AA361C5495A500F839C1 /* QYSettingViewController.h */,
+				CC63AA371C5495A500F839C1 /* QYSettingViewController.m */,
+				CC63AA401C54C32100F839C1 /* QYTese1ViewController.h */,
+				CC63AA411C54C32100F839C1 /* QYTese1ViewController.m */,
+				CC63AA451C54C48B00F839C1 /* QYTest2ViewController.h */,
+				CC63AA461C54C48B00F839C1 /* QYTest2ViewController.m */,
+				CC63AA471C54C48B00F839C1 /* QYTest2ViewController.xib */,
+				CC63AA4A1C54C49A00F839C1 /* QYTest3ViewController.h */,
+				CC63AA4B1C54C49A00F839C1 /* QYTest3ViewController.m */,
+				CC63AA4C1C54C49A00F839C1 /* QYTest3ViewController.xib */,
+				CC63AA421C54C32100F839C1 /* QYTese1ViewController.xib */,
+				CCFC5C571C53A16300993E6D /* Main.storyboard */,
+				CCFC5C5A1C53A16300993E6D /* Assets.xcassets */,
+				CCFC5C5C1C53A16300993E6D /* LaunchScreen.storyboard */,
+				CCFC5C5F1C53A16300993E6D /* Info.plist */,
+				CCFC5C4E1C53A16300993E6D /* Supporting Files */,
+				CCFC5C811C53A98700993E6D /* Common.h */,
+				CC63AA3D1C54C1E800F839C1 /* QYNavcontroller.h */,
+				CC63AA3E1C54C1E800F839C1 /* QYNavcontroller.m */,
+			);
+			path = CopyWeibo;
+			sourceTree = "<group>";
+		};
+		CCFC5C4E1C53A16300993E6D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CCFC5C821C53ACEF00993E6D /* tabbar */,
+				CCFC5C4F1C53A16300993E6D /* main.m */,
+				CC63AA3A1C54B6DC00F839C1 /* UIView+Extension.h */,
+				CC63AA3B1C54B6DC00F839C1 /* UIView+Extension.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CCFC5C671C53A16300993E6D /* CopyWeiboTests */ = {
+			isa = PBXGroup;
+			children = (
+				CCFC5C681C53A16300993E6D /* CopyWeiboTests.m */,
+				CCFC5C6A1C53A16300993E6D /* Info.plist */,
+			);
+			path = CopyWeiboTests;
+			sourceTree = "<group>";
+		};
+		CCFC5C721C53A16300993E6D /* CopyWeiboUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CCFC5C731C53A16300993E6D /* CopyWeiboUITests.m */,
+				CCFC5C751C53A16300993E6D /* Info.plist */,
+			);
+			path = CopyWeiboUITests;
+			sourceTree = "<group>";
+		};
+		CCFC5C821C53ACEF00993E6D /* tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				CCFC5C831C53ACEF00993E6D /* tabbar_compose_icon_add@2x.png */,
+				CCFC5C841C53ACEF00993E6D /* tabbar_compose_icon_add@3x.png */,
+				CCFC5C851C53ACEF00993E6D /* tabbar_discover.png */,
+				CCFC5C861C53ACEF00993E6D /* tabbar_discover@2x.png */,
+				CCFC5C871C53ACEF00993E6D /* tabbar_discover_selected.png */,
+				CCFC5C881C53ACEF00993E6D /* tabbar_discover_selected@2x.png */,
+				CCFC5C891C53ACEF00993E6D /* tabbar_home.png */,
+				CCFC5C8A1C53ACEF00993E6D /* tabbar_home@2x.png */,
+				CCFC5C8B1C53ACEF00993E6D /* tabbar_home_selected.png */,
+				CCFC5C8C1C53ACEF00993E6D /* tabbar_home_selected@2x.png */,
+				CCFC5C8D1C53ACEF00993E6D /* tabbar_message_center.png */,
+				CCFC5C8E1C53ACEF00993E6D /* tabbar_message_center@2x.png */,
+				CCFC5C8F1C53ACEF00993E6D /* tabbar_message_center_highlighted.png */,
+				CCFC5C901C53ACEF00993E6D /* tabbar_message_center_selected@2x.png */,
+				CCFC5C911C53ACEF00993E6D /* tabbar_profile.png */,
+				CCFC5C921C53ACEF00993E6D /* tabbar_profile@2x.png */,
+				CCFC5C931C53ACEF00993E6D /* tabbar_profile_selected.png */,
+				CCFC5C941C53ACEF00993E6D /* tabbar_profile_selected@2x.png */,
+			);
+			path = tabbar;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CCFC5C4A1C53A16300993E6D /* CopyWeibo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCFC5C781C53A16300993E6D /* Build configuration list for PBXNativeTarget "CopyWeibo" */;
+			buildPhases = (
+				CCFC5C471C53A16300993E6D /* Sources */,
+				CCFC5C481C53A16300993E6D /* Frameworks */,
+				CCFC5C491C53A16300993E6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CopyWeibo;
+			productName = CopyWeibo;
+			productReference = CCFC5C4B1C53A16300993E6D /* CopyWeibo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CCFC5C631C53A16300993E6D /* CopyWeiboTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCFC5C7B1C53A16300993E6D /* Build configuration list for PBXNativeTarget "CopyWeiboTests" */;
+			buildPhases = (
+				CCFC5C601C53A16300993E6D /* Sources */,
+				CCFC5C611C53A16300993E6D /* Frameworks */,
+				CCFC5C621C53A16300993E6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCFC5C661C53A16300993E6D /* PBXTargetDependency */,
+			);
+			name = CopyWeiboTests;
+			productName = CopyWeiboTests;
+			productReference = CCFC5C641C53A16300993E6D /* CopyWeiboTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CCFC5C6E1C53A16300993E6D /* CopyWeiboUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCFC5C7E1C53A16300993E6D /* Build configuration list for PBXNativeTarget "CopyWeiboUITests" */;
+			buildPhases = (
+				CCFC5C6B1C53A16300993E6D /* Sources */,
+				CCFC5C6C1C53A16300993E6D /* Frameworks */,
+				CCFC5C6D1C53A16300993E6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCFC5C711C53A16300993E6D /* PBXTargetDependency */,
+			);
+			name = CopyWeiboUITests;
+			productName = CopyWeiboUITests;
+			productReference = CCFC5C6F1C53A16300993E6D /* CopyWeiboUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CCFC5C431C53A16300993E6D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "河南青云信息技术有限公司";
+				TargetAttributes = {
+					CCFC5C4A1C53A16300993E6D = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					CCFC5C631C53A16300993E6D = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = CCFC5C4A1C53A16300993E6D;
+					};
+					CCFC5C6E1C53A16300993E6D = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = CCFC5C4A1C53A16300993E6D;
+					};
+				};
+			};
+			buildConfigurationList = CCFC5C461C53A16300993E6D /* Build configuration list for PBXProject "CopyWeibo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CCFC5C421C53A16300993E6D;
+			productRefGroup = CCFC5C4C1C53A16300993E6D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CCFC5C4A1C53A16300993E6D /* CopyWeibo */,
+				CCFC5C631C53A16300993E6D /* CopyWeiboTests */,
+				CCFC5C6E1C53A16300993E6D /* CopyWeiboUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CCFC5C491C53A16300993E6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCFC5CA61C53ACEF00993E6D /* tabbar_profile_selected@2x.png in Resources */,
+				CCFC5CA01C53ACEF00993E6D /* tabbar_message_center@2x.png in Resources */,
+				CCFC5C9A1C53ACEF00993E6D /* tabbar_discover_selected@2x.png in Resources */,
+				CC63AA441C54C32100F839C1 /* QYTese1ViewController.xib in Resources */,
+				CCFC5C971C53ACEF00993E6D /* tabbar_discover.png in Resources */,
+				CCFC5C991C53ACEF00993E6D /* tabbar_discover_selected.png in Resources */,
+				CCFC5C9D1C53ACEF00993E6D /* tabbar_home_selected.png in Resources */,
+				CCFC5C951C53ACEF00993E6D /* tabbar_compose_icon_add@2x.png in Resources */,
+				CCFC5CA51C53ACEF00993E6D /* tabbar_profile_selected.png in Resources */,
+				CCFC5C9E1C53ACEF00993E6D /* tabbar_home_selected@2x.png in Resources */,
+				CCFC5CA41C53ACEF00993E6D /* tabbar_profile@2x.png in Resources */,
+				CCFC5C9F1C53ACEF00993E6D /* tabbar_message_center.png in Resources */,
+				CCFC5CA11C53ACEF00993E6D /* tabbar_message_center_highlighted.png in Resources */,
+				CCFC5C5E1C53A16300993E6D /* LaunchScreen.storyboard in Resources */,
+				CCFC5CA21C53ACEF00993E6D /* tabbar_message_center_selected@2x.png in Resources */,
+				CCFC5C961C53ACEF00993E6D /* tabbar_compose_icon_add@3x.png in Resources */,
+				CCFC5C9B1C53ACEF00993E6D /* tabbar_home.png in Resources */,
+				CCFC5C9C1C53ACEF00993E6D /* tabbar_home@2x.png in Resources */,
+				CCFC5C981C53ACEF00993E6D /* tabbar_discover@2x.png in Resources */,
+				CCFC5CA31C53ACEF00993E6D /* tabbar_profile.png in Resources */,
+				CCFC5C5B1C53A16300993E6D /* Assets.xcassets in Resources */,
+				CCFC5C591C53A16300993E6D /* Main.storyboard in Resources */,
+				CC63AA4E1C54C49A00F839C1 /* QYTest3ViewController.xib in Resources */,
+				CC63AA491C54C48B00F839C1 /* QYTest2ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCFC5C621C53A16300993E6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCFC5C6D1C53A16300993E6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CCFC5C471C53A16300993E6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC63AA3C1C54B6DC00F839C1 /* UIView+Extension.m in Sources */,
+				CC63AA431C54C32100F839C1 /* QYTese1ViewController.m in Sources */,
+				CC63AA321C54952F00F839C1 /* QYMoerViewController.m in Sources */,
+				CC63AA3F1C54C1E800F839C1 /* QYNavcontroller.m in Sources */,
+				CC63AA2F1C54952200F839C1 /* QYMessageViewController.m in Sources */,
+				CCFC5C561C53A16300993E6D /* ViewController.m in Sources */,
+				CC63AA481C54C48B00F839C1 /* QYTest2ViewController.m in Sources */,
+				CC63AA351C54953D00F839C1 /* QYFindViewController.m in Sources */,
+				CC63AA4D1C54C49A00F839C1 /* QYTest3ViewController.m in Sources */,
+				CCFC5C531C53A16300993E6D /* AppDelegate.m in Sources */,
+				CC63AA2C1C54950B00F839C1 /* QYHomeViewController.m in Sources */,
+				CCFC5C501C53A16300993E6D /* main.m in Sources */,
+				CC63AA381C5495A500F839C1 /* QYSettingViewController.m in Sources */,
+				CC63AA1D1C54930400F839C1 /* QYTabbarVIewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCFC5C601C53A16300993E6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCFC5C691C53A16300993E6D /* CopyWeiboTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCFC5C6B1C53A16300993E6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCFC5C741C53A16300993E6D /* CopyWeiboUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CCFC5C661C53A16300993E6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCFC5C4A1C53A16300993E6D /* CopyWeibo */;
+			targetProxy = CCFC5C651C53A16300993E6D /* PBXContainerItemProxy */;
+		};
+		CCFC5C711C53A16300993E6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCFC5C4A1C53A16300993E6D /* CopyWeibo */;
+			targetProxy = CCFC5C701C53A16300993E6D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CCFC5C571C53A16300993E6D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCFC5C581C53A16300993E6D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CCFC5C5C1C53A16300993E6D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCFC5C5D1C53A16300993E6D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CCFC5C761C53A16300993E6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CCFC5C771C53A16300993E6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CCFC5C791C53A16300993E6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CopyWeibo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hnqingyun.CopyWeibo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CCFC5C7A1C53A16300993E6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CopyWeibo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hnqingyun.CopyWeibo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CCFC5C7C1C53A16300993E6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CopyWeiboTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hnqingyun.CopyWeiboTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CopyWeibo.app/CopyWeibo";
+			};
+			name = Debug;
+		};
+		CCFC5C7D1C53A16300993E6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CopyWeiboTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hnqingyun.CopyWeiboTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CopyWeibo.app/CopyWeibo";
+			};
+			name = Release;
+		};
+		CCFC5C7F1C53A16300993E6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CopyWeiboUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hnqingyun.CopyWeiboUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CopyWeibo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		CCFC5C801C53A16300993E6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CopyWeiboUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hnqingyun.CopyWeiboUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CopyWeibo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CCFC5C461C53A16300993E6D /* Build configuration list for PBXProject "CopyWeibo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCFC5C761C53A16300993E6D /* Debug */,
+				CCFC5C771C53A16300993E6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCFC5C781C53A16300993E6D /* Build configuration list for PBXNativeTarget "CopyWeibo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCFC5C791C53A16300993E6D /* Debug */,
+				CCFC5C7A1C53A16300993E6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCFC5C7B1C53A16300993E6D /* Build configuration list for PBXNativeTarget "CopyWeiboTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCFC5C7C1C53A16300993E6D /* Debug */,
+				CCFC5C7D1C53A16300993E6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCFC5C7E1C53A16300993E6D /* Build configuration list for PBXNativeTarget "CopyWeiboUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCFC5C7F1C53A16300993E6D /* Debug */,
+				CCFC5C801C53A16300993E6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CCFC5C431C53A16300993E6D /* Project object */;
+}
