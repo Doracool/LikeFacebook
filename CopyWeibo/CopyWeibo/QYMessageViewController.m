@@ -8,6 +8,7 @@
 
 #import "QYMessageViewController.h"
 #import "QYTese1ViewController.h"
+#import "UIBarButtonItem+Extension.h"
 @interface QYMessageViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic, strong) UITableView *table;
 @end
@@ -20,6 +21,9 @@
     _table.dataSource = self;
     _table.delegate = self;
     [self.view addSubview:_table];
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"写私信" style:UIBarButtonItemStylePlain target:self action:@selector(composeMsg)];
+    self.navigationItem.rightBarButtonItem.enabled = NO;
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -27,9 +31,13 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+}
+- (void)composeMsg {
+    NSLog(@"composeMsg");
 }
 
 #pragma mark - Table view data source

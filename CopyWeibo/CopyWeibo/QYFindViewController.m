@@ -7,7 +7,7 @@
 //
 
 #import "QYFindViewController.h"
-
+#import "UIView+Extension.h"
 @interface QYFindViewController ()
 
 @end
@@ -17,6 +17,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    UITextField *searchBar = [[UITextField alloc] init];
+    searchBar.font = [UIFont systemFontOfSize:14];
+    searchBar.placeholder = @"输入你想要搜索的内容";
+    searchBar.width = self.view.frame.size.width - 40;
+    searchBar.height = 30;
+    searchBar.background = [UIImage imageNamed:@"searchbar_textfield_background"];
+    
+    UIImageView *searchIcon = [[UIImageView alloc] init];
+    searchIcon.image = [UIImage imageNamed:@"searchbar_textfield_search_icon"];
+    searchIcon.width = 30;
+    searchIcon.height = 30;
+    searchIcon.contentMode = UIViewContentModeCenter;
+    searchBar.leftView = searchIcon;
+    searchBar.leftViewMode = UITextFieldViewModeAlways;
+    
+    self.navigationItem.titleView = searchBar;
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     

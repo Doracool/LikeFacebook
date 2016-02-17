@@ -17,4 +17,10 @@
 #define QYRandomColor QYColor(arc4random_uniform(256),arc4random_uniform(256),arc4random_uniform(256))
 
 
+#ifdef DEBUG //
+#define QYLog(...) NSLog(__VA_ARGS__)
+#else //
+#define QYLog(...)
+#endif
+
 #endif /* Common_h */

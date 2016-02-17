@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC3841111C7491D400C396F8 /* QYItemTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3841101C7491D400C396F8 /* QYItemTool.m */; };
+		CC3841161C7497D800C396F8 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3841151C7497D800C396F8 /* UIBarButtonItem+Extension.m */; };
 		CC63AA1D1C54930400F839C1 /* QYTabbarVIewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC63AA1C1C54930400F839C1 /* QYTabbarVIewController.m */; };
 		CC63AA2C1C54950B00F839C1 /* QYHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC63AA2B1C54950B00F839C1 /* QYHomeViewController.m */; };
 		CC63AA2F1C54952200F839C1 /* QYMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC63AA2E1C54952200F839C1 /* QYMessageViewController.m */; };
@@ -67,6 +69,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC38410F1C7491D400C396F8 /* QYItemTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYItemTool.h; sourceTree = "<group>"; };
+		CC3841101C7491D400C396F8 /* QYItemTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QYItemTool.m; sourceTree = "<group>"; };
+		CC3841141C7497D800C396F8 /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
+		CC3841151C7497D800C396F8 /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
+		CC3841181C749B4E00C396F8 /* pchFile.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pchFile.pch; sourceTree = "<group>"; };
 		CC63AA1B1C54930400F839C1 /* QYTabbarVIewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYTabbarVIewController.h; sourceTree = "<group>"; };
 		CC63AA1C1C54930400F839C1 /* QYTabbarVIewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QYTabbarVIewController.m; sourceTree = "<group>"; };
 		CC63AA2A1C54950B00F839C1 /* QYHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYHomeViewController.h; sourceTree = "<group>"; };
@@ -154,6 +161,123 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC3841121C74971C00C396F8 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				CC63AA3A1C54B6DC00F839C1 /* UIView+Extension.h */,
+				CC63AA3B1C54B6DC00F839C1 /* UIView+Extension.m */,
+				CC3841141C7497D800C396F8 /* UIBarButtonItem+Extension.h */,
+				CC3841151C7497D800C396F8 /* UIBarButtonItem+Extension.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		CC6D64F21C54FBBC005D50B7 /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				CC63AA361C5495A500F839C1 /* QYSettingViewController.h */,
+				CC63AA371C5495A500F839C1 /* QYSettingViewController.m */,
+			);
+			name = profile;
+			sourceTree = "<group>";
+		};
+		CC6D64F31C54FBC9005D50B7 /* discover */ = {
+			isa = PBXGroup;
+			children = (
+				CC63AA331C54953D00F839C1 /* QYFindViewController.h */,
+				CC63AA341C54953D00F839C1 /* QYFindViewController.m */,
+			);
+			name = discover;
+			sourceTree = "<group>";
+		};
+		CC6D64F41C54FBD3005D50B7 /* more */ = {
+			isa = PBXGroup;
+			children = (
+				CC63AA301C54952F00F839C1 /* QYMoerViewController.h */,
+				CC63AA311C54952F00F839C1 /* QYMoerViewController.m */,
+			);
+			name = more;
+			sourceTree = "<group>";
+		};
+		CC6D64F51C54FBDA005D50B7 /* message */ = {
+			isa = PBXGroup;
+			children = (
+				CC63AA2D1C54952200F839C1 /* QYMessageViewController.h */,
+				CC63AA2E1C54952200F839C1 /* QYMessageViewController.m */,
+			);
+			name = message;
+			sourceTree = "<group>";
+		};
+		CC6D64F61C54FBE2005D50B7 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				CCEF4A081C746CE7002F05A5 /* controller */,
+				CCEF4A091C746CF6002F05A5 /* model */,
+				CCEF4A0A1C746D00002F05A5 /* view */,
+			);
+			name = home;
+			sourceTree = "<group>";
+		};
+		CC6D64F71C54FBFB005D50B7 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				CC3841121C74971C00C396F8 /* Category */,
+				CCFC5C511C53A16300993E6D /* AppDelegate.h */,
+				CCFC5C521C53A16300993E6D /* AppDelegate.m */,
+				CC63AA1B1C54930400F839C1 /* QYTabbarVIewController.h */,
+				CC63AA1C1C54930400F839C1 /* QYTabbarVIewController.m */,
+				CC63AA3D1C54C1E800F839C1 /* QYNavcontroller.h */,
+				CC63AA3E1C54C1E800F839C1 /* QYNavcontroller.m */,
+			);
+			name = main;
+			sourceTree = "<group>";
+		};
+		CC6D64F81C54FC03005D50B7 /* other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = other;
+			sourceTree = "<group>";
+		};
+		CC6D64F91C54FC4E005D50B7 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				CC63AA401C54C32100F839C1 /* QYTese1ViewController.h */,
+				CC63AA411C54C32100F839C1 /* QYTese1ViewController.m */,
+				CC63AA451C54C48B00F839C1 /* QYTest2ViewController.h */,
+				CC63AA461C54C48B00F839C1 /* QYTest2ViewController.m */,
+				CC63AA471C54C48B00F839C1 /* QYTest2ViewController.xib */,
+				CC63AA4A1C54C49A00F839C1 /* QYTest3ViewController.h */,
+				CC63AA4B1C54C49A00F839C1 /* QYTest3ViewController.m */,
+				CC63AA4C1C54C49A00F839C1 /* QYTest3ViewController.xib */,
+				CC63AA421C54C32100F839C1 /* QYTese1ViewController.xib */,
+			);
+			name = test;
+			sourceTree = "<group>";
+		};
+		CCEF4A081C746CE7002F05A5 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				CC63AA2A1C54950B00F839C1 /* QYHomeViewController.h */,
+				CC63AA2B1C54950B00F839C1 /* QYHomeViewController.m */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		CCEF4A091C746CF6002F05A5 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		CCEF4A0A1C746D00002F05A5 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
 		CCFC5C421C53A16300993E6D = {
 			isa = PBXGroup;
 			children = (
@@ -177,39 +301,24 @@
 		CCFC5C4D1C53A16300993E6D /* CopyWeibo */ = {
 			isa = PBXGroup;
 			children = (
-				CCFC5C511C53A16300993E6D /* AppDelegate.h */,
-				CCFC5C521C53A16300993E6D /* AppDelegate.m */,
+				CC6D64F91C54FC4E005D50B7 /* test */,
+				CC6D64F81C54FC03005D50B7 /* other */,
+				CC6D64F71C54FBFB005D50B7 /* main */,
+				CC6D64F61C54FBE2005D50B7 /* home */,
+				CC6D64F51C54FBDA005D50B7 /* message */,
+				CC6D64F41C54FBD3005D50B7 /* more */,
+				CC6D64F31C54FBC9005D50B7 /* discover */,
+				CC6D64F21C54FBBC005D50B7 /* profile */,
 				CCFC5C541C53A16300993E6D /* ViewController.h */,
 				CCFC5C551C53A16300993E6D /* ViewController.m */,
-				CC63AA1B1C54930400F839C1 /* QYTabbarVIewController.h */,
-				CC63AA1C1C54930400F839C1 /* QYTabbarVIewController.m */,
-				CC63AA2A1C54950B00F839C1 /* QYHomeViewController.h */,
-				CC63AA2B1C54950B00F839C1 /* QYHomeViewController.m */,
-				CC63AA2D1C54952200F839C1 /* QYMessageViewController.h */,
-				CC63AA2E1C54952200F839C1 /* QYMessageViewController.m */,
-				CC63AA301C54952F00F839C1 /* QYMoerViewController.h */,
-				CC63AA311C54952F00F839C1 /* QYMoerViewController.m */,
-				CC63AA331C54953D00F839C1 /* QYFindViewController.h */,
-				CC63AA341C54953D00F839C1 /* QYFindViewController.m */,
-				CC63AA361C5495A500F839C1 /* QYSettingViewController.h */,
-				CC63AA371C5495A500F839C1 /* QYSettingViewController.m */,
-				CC63AA401C54C32100F839C1 /* QYTese1ViewController.h */,
-				CC63AA411C54C32100F839C1 /* QYTese1ViewController.m */,
-				CC63AA451C54C48B00F839C1 /* QYTest2ViewController.h */,
-				CC63AA461C54C48B00F839C1 /* QYTest2ViewController.m */,
-				CC63AA471C54C48B00F839C1 /* QYTest2ViewController.xib */,
-				CC63AA4A1C54C49A00F839C1 /* QYTest3ViewController.h */,
-				CC63AA4B1C54C49A00F839C1 /* QYTest3ViewController.m */,
-				CC63AA4C1C54C49A00F839C1 /* QYTest3ViewController.xib */,
-				CC63AA421C54C32100F839C1 /* QYTese1ViewController.xib */,
 				CCFC5C571C53A16300993E6D /* Main.storyboard */,
 				CCFC5C5A1C53A16300993E6D /* Assets.xcassets */,
 				CCFC5C5C1C53A16300993E6D /* LaunchScreen.storyboard */,
 				CCFC5C5F1C53A16300993E6D /* Info.plist */,
 				CCFC5C4E1C53A16300993E6D /* Supporting Files */,
 				CCFC5C811C53A98700993E6D /* Common.h */,
-				CC63AA3D1C54C1E800F839C1 /* QYNavcontroller.h */,
-				CC63AA3E1C54C1E800F839C1 /* QYNavcontroller.m */,
+				CC38410F1C7491D400C396F8 /* QYItemTool.h */,
+				CC3841101C7491D400C396F8 /* QYItemTool.m */,
 			);
 			path = CopyWeibo;
 			sourceTree = "<group>";
@@ -219,8 +328,7 @@
 			children = (
 				CCFC5C821C53ACEF00993E6D /* tabbar */,
 				CCFC5C4F1C53A16300993E6D /* main.m */,
-				CC63AA3A1C54B6DC00F839C1 /* UIView+Extension.h */,
-				CC63AA3B1C54B6DC00F839C1 /* UIView+Extension.m */,
+				CC3841181C749B4E00C396F8 /* pchFile.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -419,6 +527,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC3841111C7491D400C396F8 /* QYItemTool.m in Sources */,
 				CC63AA3C1C54B6DC00F839C1 /* UIView+Extension.m in Sources */,
 				CC63AA431C54C32100F839C1 /* QYTese1ViewController.m in Sources */,
 				CC63AA321C54952F00F839C1 /* QYMoerViewController.m in Sources */,
@@ -430,6 +539,7 @@
 				CC63AA4D1C54C49A00F839C1 /* QYTest3ViewController.m in Sources */,
 				CCFC5C531C53A16300993E6D /* AppDelegate.m in Sources */,
 				CC63AA2C1C54950B00F839C1 /* QYHomeViewController.m in Sources */,
+				CC3841161C7497D800C396F8 /* UIBarButtonItem+Extension.m in Sources */,
 				CCFC5C501C53A16300993E6D /* main.m in Sources */,
 				CC63AA381C5495A500F839C1 /* QYSettingViewController.m in Sources */,
 				CC63AA1D1C54930400F839C1 /* QYTabbarVIewController.m in Sources */,
@@ -571,6 +681,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = CopyWeibo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hnqingyun.CopyWeibo;
@@ -582,6 +694,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = CopyWeibo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hnqingyun.CopyWeibo;

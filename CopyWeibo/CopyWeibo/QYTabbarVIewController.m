@@ -63,7 +63,7 @@
     NSMutableDictionary *SelectedtextAttrs = [NSMutableDictionary dictionary];
     SelectedtextAttrs[NSForegroundColorAttributeName] = [UIColor orangeColor];
     [childVc.tabBarItem setTitleTextAttributes:SelectedtextAttrs forState:UIControlStateSelected];
-    childVc.view.backgroundColor = QYRandomColor;
+//    childVc.view.backgroundColor = QYRandomColor;
     QYNavcontroller *nav = [[QYNavcontroller alloc] initWithRootViewController:childVc];
     [self addChildViewController:nav];
     

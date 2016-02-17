@@ -7,7 +7,8 @@
 //
 
 #import "QYHomeViewController.h"
-
+#import "UIView+Extension.h"
+#import "UIBarButtonItem+Extension.h"
 @interface QYHomeViewController ()
 
 @end
@@ -16,14 +17,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+   
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithTarget:self Action:@selector(friendseach) Image:@"navigationbar_friendsearch" HighImage:@"navigationbar_friendsearch_highlighted"];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithTarget:self Action:@selector(pop) Image:@"navigationbar_pop" HighImage:@"navigationbar_pop_highlighted"];
 }
 
+-(void)friendseach{
+    NSLog(@"friendseach");
+}
+
+-(void)pop{
+    NSLog(@"pop");
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

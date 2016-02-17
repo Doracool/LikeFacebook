@@ -8,6 +8,7 @@
 
 #import "QYNavcontroller.h"
 #import "UIView+Extension.h"
+#import "UIBarButtonItem+Extension.h"
 @interface QYNavcontroller ()
 
 @end
@@ -21,6 +22,24 @@
         
     }
     return self;
+}
+
++ (void)initialize
+{
+    UIBarButtonItem *item = [UIBarButtonItem appearance];
+    //设置普通
+    NSMutableDictionary *textAttrs = [NSMutableDictionary dictionary];
+    textAttrs[NSForegroundColorAttributeName] = [UIColor orangeColor];
+    textAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:13];
+    [item setTitleTextAttributes:textAttrs forState:UIControlStateNormal];
+
+    //设置不可用状态
+    NSMutableDictionary *disableTextAttrs = [NSMutableDictionary dictionary];
+    disableTextAttrs[NSForegroundColorAttributeName] = [UIColor colorWithRed:0.8 green:0.8 blue:0.8 alpha:1.0];
+    disableTextAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:13];
+    [item setTitleTextAttributes:disableTextAttrs forState:UIControlStateDisabled];
+    
+
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -38,24 +57,10 @@
    
     if (self.viewControllers.count > 0) {
         viewController.hidesBottomBarWhenPushed = YES;
-        UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [backBtn addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
-        //设置图片
-        [backBtn setBackgroundImage:[UIImage imageNamed:@"tabbar_discover_selected"] forState:UIControlStateNormal];
-        [backBtn setBackgroundImage:[UIImage imageNamed:@"tabbar_discover_selected"] forState:UIControlStateHighlighted];
-        
         //设置尺寸
-        backBtn.size = backBtn.currentBackgroundImage.size;
-        viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
-        
-        UIButton *moreBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [moreBtn addTarget:self action:@selector(more) forControlEvents:UIControlEventTouchUpInside];
-        
-        [moreBtn setBackgroundImage:[UIImage imageNamed:@"tabbar_home_selected"] forState:UIControlStateNormal];
-        [moreBtn setBackgroundImage:[UIImage imageNamed:@"tabbar_home_selected"] forState:UIControlStateHighlighted];
-        
-        moreBtn.size = moreBtn.currentBackgroundImage.size;
-        viewController.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:moreBtn];
+        viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithTarget:self Action:@selector(back) Image:@"navigationbar_back" HighImage:@"navigationbar_back_highlighted"];
+
+        viewController.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithTarget:self Action:@selector(more) Image:@"navigationbar_more" HighImage:@"navigationbar_more_highlighted"];
         
         
     }
