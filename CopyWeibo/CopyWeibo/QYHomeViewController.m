@@ -9,6 +9,8 @@
 #import "QYHomeViewController.h"
 #import "UIView+Extension.h"
 #import "UIBarButtonItem+Extension.h"
+#import "QYDropdownMenu.h"
+#import "QYTitleMenuViewController.h"
 @interface QYHomeViewController ()
 
 @end
@@ -21,8 +23,39 @@
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithTarget:self Action:@selector(friendseach) Image:@"navigationbar_friendsearch" HighImage:@"navigationbar_friendsearch_highlighted"];
     
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithTarget:self Action:@selector(pop) Image:@"navigationbar_pop" HighImage:@"navigationbar_pop_highlighted"];
+    
+    //中间的标题按钮
+    UIButton *titleButton = [[UIButton alloc] init];
+    titleButton.width = 150;
+    titleButton.height = 30;
+    
+    //设置图片和文字
+    [titleButton setTitle:@"首页" forState:UIControlStateNormal];
+    [titleButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    titleButton.titleLabel.font = [UIFont boldSystemFontOfSize:17];
+    [titleButton setImage:[UIImage imageNamed:@"navigationbar_arrow_down"] forState:UIControlStateNormal];
+    
+    titleButton.imageEdgeInsets = UIEdgeInsetsMake(0, 70, 0, 0);
+    titleButton.titleEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 40);
+    [titleButton addTarget:self action:@selector(titleClick:) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.titleView = titleButton;
 }
 
+/**
+ *  点击标题
+ */
+- (void)titleClick:(UIButton *)titleBUtton
+{
+    //创建下拉菜单
+    QYDropdownMenu *menu = [QYDropdownMenu menu];
+//    menu.content = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 0, 100)];
+    QYTitleMenuViewController *vc = [[QYTitleMenuViewController alloc] init];
+    vc.view.height = 44 * 3;
+    vc.view.width = 150;
+    menu.contentControler = vc;
+    //显示
+    [menu showFrom:titleBUtton];
+}
 -(void)friendseach{
     NSLog(@"friendseach");
 }

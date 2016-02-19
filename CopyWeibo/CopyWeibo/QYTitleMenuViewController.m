@@ -1,28 +1,22 @@
 //
-//  QYFindViewController.m
+//  QYTitleMenuViewController.m
 //  CopyWeibo
 //
-//  Created by qingyun on 16/1/24.
+//  Created by qingyun on 16/2/18.
 //  Copyright © 2016年 河南青云信息技术有限公司. All rights reserved.
 //
 
-#import "QYFindViewController.h"
-#import "UIView+Extension.h"
-#import "QYSearchBar.h"
-@interface QYFindViewController ()
+#import "QYTitleMenuViewController.h"
+
+@interface QYTitleMenuViewController ()
 
 @end
 
-@implementation QYFindViewController
+@implementation QYTitleMenuViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    QYSearchBar *searchBar = [QYSearchBar searchBar];
-    searchBar.width = self.view.frame.size.width - 40;
-    searchBar.height = 30;
-    
-    self.navigationItem.titleView = searchBar;
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -37,25 +31,30 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
-}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return 3;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    static NSString *ID = @"cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
+    }
     
-    // Configure the cell...
+    if (indexPath.row == 0) {
+        cell.textLabel.text = @"好友";
+    }else if (indexPath.row == 1) {
+        cell.textLabel.text = @"朋友";
+    }else if (indexPath.row == 2) {
+        cell.textLabel.text = @"同学";
+    }
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.

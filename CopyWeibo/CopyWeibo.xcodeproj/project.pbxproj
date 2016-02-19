@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC21C1871C75545700F8368E /* QYSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CC21C1861C75545700F8368E /* QYSearchBar.m */; };
+		CC21C1D61C75C97200F8368E /* QYDropdownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = CC21C1D51C75C97200F8368E /* QYDropdownMenu.m */; };
+		CC21C1D91C75FC3100F8368E /* QYTitleMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC21C1D81C75FC3100F8368E /* QYTitleMenuViewController.m */; };
 		CC3841111C7491D400C396F8 /* QYItemTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3841101C7491D400C396F8 /* QYItemTool.m */; };
 		CC3841161C7497D800C396F8 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3841151C7497D800C396F8 /* UIBarButtonItem+Extension.m */; };
 		CC63AA1D1C54930400F839C1 /* QYTabbarVIewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC63AA1C1C54930400F839C1 /* QYTabbarVIewController.m */; };
@@ -69,6 +72,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC21C1851C75545700F8368E /* QYSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYSearchBar.h; sourceTree = "<group>"; };
+		CC21C1861C75545700F8368E /* QYSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QYSearchBar.m; sourceTree = "<group>"; };
+		CC21C1D41C75C97200F8368E /* QYDropdownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYDropdownMenu.h; sourceTree = "<group>"; };
+		CC21C1D51C75C97200F8368E /* QYDropdownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QYDropdownMenu.m; sourceTree = "<group>"; };
+		CC21C1D71C75FC3100F8368E /* QYTitleMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYTitleMenuViewController.h; sourceTree = "<group>"; };
+		CC21C1D81C75FC3100F8368E /* QYTitleMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QYTitleMenuViewController.m; sourceTree = "<group>"; };
 		CC38410F1C7491D400C396F8 /* QYItemTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYItemTool.h; sourceTree = "<group>"; };
 		CC3841101C7491D400C396F8 /* QYItemTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QYItemTool.m; sourceTree = "<group>"; };
 		CC3841141C7497D800C396F8 /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
@@ -161,6 +170,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC21C1831C75541D00F8368E /* other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = other;
+			sourceTree = "<group>";
+		};
+		CC21C1841C75542500F8368E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CC21C1851C75545700F8368E /* QYSearchBar.h */,
+				CC21C1861C75545700F8368E /* QYSearchBar.m */,
+				CC21C1D41C75C97200F8368E /* QYDropdownMenu.h */,
+				CC21C1D51C75C97200F8368E /* QYDropdownMenu.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		CC3841121C74971C00C396F8 /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,6 +248,8 @@
 		CC6D64F71C54FBFB005D50B7 /* main */ = {
 			isa = PBXGroup;
 			children = (
+				CC21C1841C75542500F8368E /* View */,
+				CC21C1831C75541D00F8368E /* other */,
 				CC3841121C74971C00C396F8 /* Category */,
 				CCFC5C511C53A16300993E6D /* AppDelegate.h */,
 				CCFC5C521C53A16300993E6D /* AppDelegate.m */,
@@ -251,6 +280,8 @@
 				CC63AA4B1C54C49A00F839C1 /* QYTest3ViewController.m */,
 				CC63AA4C1C54C49A00F839C1 /* QYTest3ViewController.xib */,
 				CC63AA421C54C32100F839C1 /* QYTese1ViewController.xib */,
+				CC21C1D71C75FC3100F8368E /* QYTitleMenuViewController.h */,
+				CC21C1D81C75FC3100F8368E /* QYTitleMenuViewController.m */,
 			);
 			name = test;
 			sourceTree = "<group>";
@@ -530,6 +561,7 @@
 				CC3841111C7491D400C396F8 /* QYItemTool.m in Sources */,
 				CC63AA3C1C54B6DC00F839C1 /* UIView+Extension.m in Sources */,
 				CC63AA431C54C32100F839C1 /* QYTese1ViewController.m in Sources */,
+				CC21C1871C75545700F8368E /* QYSearchBar.m in Sources */,
 				CC63AA321C54952F00F839C1 /* QYMoerViewController.m in Sources */,
 				CC63AA3F1C54C1E800F839C1 /* QYNavcontroller.m in Sources */,
 				CC63AA2F1C54952200F839C1 /* QYMessageViewController.m in Sources */,
@@ -542,7 +574,9 @@
 				CC3841161C7497D800C396F8 /* UIBarButtonItem+Extension.m in Sources */,
 				CCFC5C501C53A16300993E6D /* main.m in Sources */,
 				CC63AA381C5495A500F839C1 /* QYSettingViewController.m in Sources */,
+				CC21C1D91C75FC3100F8368E /* QYTitleMenuViewController.m in Sources */,
 				CC63AA1D1C54930400F839C1 /* QYTabbarVIewController.m in Sources */,
+				CC21C1D61C75C97200F8368E /* QYDropdownMenu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
