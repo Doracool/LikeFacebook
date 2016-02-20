@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "Common.h"
 #import "QYTabbarVIewController.h"
+#import "QYNewFeatureViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -22,8 +23,9 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
     //2 设置跟视图控制器
-    QYTabbarVIewController *tabBarVC = [[QYTabbarVIewController alloc] init];
-    self.window.rootViewController = tabBarVC;
+//    QYTabbarVIewController *tabBarVC = [[QYTabbarVIewController alloc] init];
+    QYNewFeatureViewController *newFeature = [[QYNewFeatureViewController alloc] init];
+    self.window.rootViewController = newFeature;
 
     //3 显示窗口
     [self.window makeKeyAndVisible];

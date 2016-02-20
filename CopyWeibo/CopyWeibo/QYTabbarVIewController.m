@@ -14,7 +14,8 @@
 #import "QYSettingViewController.h"
 #import "Common.h"
 #import "QYNavcontroller.h"
-@interface QYTabbarVIewController ()
+#import "QYTabBar.h"
+@interface QYTabbarVIewController ()<QYTabbarDelegate>
 
 @end
 
@@ -28,8 +29,20 @@
     QYMessageViewController *message = [[QYMessageViewController alloc] init];
     [self addChildVC:message title:@"信息" image:@"tabbar_message_center" selectedImage:@"tabbar_message_center_selected"];
     
-    QYMoerViewController *more = [[QYMoerViewController alloc] init];
-    [self addChildVC:more title:@"" image:@"tabbar_compose_icon_add" selectedImage:@"tabbar_compose_icon_add"];
+    //添加button按钮
+//    self.tabBar = [[QYTabBar alloc] init];与下边的效果相同
+    QYTabBar *tabBar = [[QYTabBar alloc] init];
+    tabBar.delegate = self;
+    [self setValue:tabBar forKeyPath:@"tabBar"];
+    
+    //[self setValue:tabBar forKeyPath:@"tabBar"]; 这段代码执行完之后 tabbar 的delegate 就是QYTabBarViewController
+    //说明不需要设置delegate
+    
+    
+    //如果tabbar设置完delegate后在执行下面修改delegate就会报错
+    
+    //如果再次修改Tabbar的delegate属性就会报错
+    
     
     QYFindViewController *find = [[QYFindViewController alloc] init];
     [self addChildVC:find title:@"发现" image:@"tabbar_discover" selectedImage:@"tabbar_discover_selected"];
@@ -69,6 +82,15 @@
     
 }
 
+
+#pragma mark - QYTabBarDelegate代理方法
+
+-(void)tabBarDidClickPlusButton:(QYTabBar *)tabBar
+{
+    UIViewController *vc = [[UIViewController alloc] init];
+    vc.view.backgroundColor = QYRandomColor;
+    [self presentViewController:vc animated:YES completion:nil];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

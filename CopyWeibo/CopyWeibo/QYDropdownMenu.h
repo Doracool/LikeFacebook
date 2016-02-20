@@ -7,9 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+@class QYDropdownMenu;
+@protocol QYDropdownMenuDelegate <NSObject>
+@optional
+-(void)dropdownMenuDismiss:(QYDropdownMenu *)menu;
+-(void)dropdownMenuDisShow:(QYDropdownMenu *)menu;
 
+@end
 @interface QYDropdownMenu : UIView
 
+@property (nonatomic , weak) id<QYDropdownMenuDelegate> delegate;
 +(instancetype)menu;
 
 -(void)showFrom:(UIView *)form;

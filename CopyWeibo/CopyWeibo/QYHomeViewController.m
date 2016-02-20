@@ -7,11 +7,9 @@
 //
 
 #import "QYHomeViewController.h"
-#import "UIView+Extension.h"
-#import "UIBarButtonItem+Extension.h"
 #import "QYDropdownMenu.h"
 #import "QYTitleMenuViewController.h"
-@interface QYHomeViewController ()
+@interface QYHomeViewController ()<QYDropdownMenuDelegate>
 
 @end
 
@@ -34,11 +32,13 @@
     [titleButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     titleButton.titleLabel.font = [UIFont boldSystemFontOfSize:17];
     [titleButton setImage:[UIImage imageNamed:@"navigationbar_arrow_down"] forState:UIControlStateNormal];
+    [titleButton setImage:[UIImage imageNamed:@"navigationbar_arrow_up"] forState:UIControlStateSelected];
     
     titleButton.imageEdgeInsets = UIEdgeInsetsMake(0, 70, 0, 0);
     titleButton.titleEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 40);
     [titleButton addTarget:self action:@selector(titleClick:) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.titleView = titleButton;
+    
 }
 
 /**
@@ -48,6 +48,7 @@
 {
     //创建下拉菜单
     QYDropdownMenu *menu = [QYDropdownMenu menu];
+    menu.delegate = self;
 //    menu.content = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 0, 100)];
     QYTitleMenuViewController *vc = [[QYTitleMenuViewController alloc] init];
     vc.view.height = 44 * 3;
@@ -55,6 +56,7 @@
     menu.contentControler = vc;
     //显示
     [menu showFrom:titleBUtton];
+    
 }
 -(void)friendseach{
     NSLog(@"friendseach");
@@ -62,6 +64,17 @@
 
 -(void)pop{
     NSLog(@"pop");
+}
+
+-(void)dropdownMenuDismiss:(QYDropdownMenu *)menu
+{
+    UIButton *titleButton = (UIButton *)self.navigationItem.titleView;
+    titleButton.selected = NO;
+}
+-(void)dropdownMenuDisShow:(QYDropdownMenu *)menu
+{
+    UIButton *titleButton = (UIButton *)self.navigationItem.titleView;
+    titleButton.selected = YES;
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -88,11 +88,21 @@
     CGRect newFrame = [form convertRect:form.bounds toView:window];
     self.containerView.centerX = CGRectGetMidX(newFrame);
     self.containerView.y = CGRectGetMidY(newFrame) + 10;
+    
+    //通知外界自己显示了
+    if ([self.delegate respondsToSelector:@selector(dropdownMenuDisShow:)]) {
+        [self.delegate dropdownMenuDisShow:self];
+    }
 }
 
 -(void)dismiss
 {
     [self removeFromSuperview];
+    
+    //通知外界自己被销毁了
+    if ([self.delegate respondsToSelector:@selector(dropdownMenuDismiss:)]) {
+        [self.delegate dropdownMenuDismiss:self];
+    }
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
