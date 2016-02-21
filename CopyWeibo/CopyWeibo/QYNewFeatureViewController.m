@@ -7,7 +7,7 @@
 //
 
 #import "QYNewFeatureViewController.h"
-
+#import "QYTabbarVIewController.h"
 @interface QYNewFeatureViewController ()<UIScrollViewDelegate>
 @property (nonatomic ,strong) UIPageControl *pageControl;
 @property (nonatomic ,strong) UIScrollView *scrollView;
@@ -101,12 +101,25 @@
     startBtn.centerY = imageView.height * 0.8;
     [startBtn setTitle:@"进入微博" forState:UIControlStateNormal];
     [imageView addSubview:startBtn];
+    [startBtn addTarget:self action:@selector(startClick) forControlEvents:UIControlEventTouchUpInside];
 }
 
 -(void)shareClick:(UIButton *)shareButton
 {
     //状态取反
     shareButton.selected = !shareButton.isSelected;
+}
+
+-(void)startClick
+{
+    //切换到QYHomeViewControl
+    //切换控制器方法
+    //1 push 依赖于导航控制器 push是可逆的
+    //2 modal 也是可逆的
+    //3 切换视图控制器
+    UIWindow *window = [UIApplication sharedApplication].keyWindow;
+    window.rootViewController = [[QYTabbarVIewController alloc] init];
+    
 }
 /*
 #pragma mark - Navigation

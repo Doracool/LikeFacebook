@@ -10,6 +10,7 @@
 #import "Common.h"
 #import "QYTabbarVIewController.h"
 #import "QYNewFeatureViewController.h"
+#import "QYOAuthViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -23,9 +24,26 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
     //2 设置跟视图控制器
-//    QYTabbarVIewController *tabBarVC = [[QYTabbarVIewController alloc] init];
-    QYNewFeatureViewController *newFeature = [[QYNewFeatureViewController alloc] init];
-    self.window.rootViewController = newFeature;
+    self.window.rootViewController = [[QYOAuthViewController alloc] init];
+    
+//    //存储在沙盒中的版本号(上一次打开的版本号)
+//    NSString *key = [NSString stringWithFormat:@"CFBundleVersion"];
+//    NSString *lastVersion = [[NSUserDefaults standardUserDefaults] objectForKey:key];
+//    QYLog(@"%@",lastVersion);
+//    //获得当前软件的版本号(info.plist)
+//    NSString *info = [NSBundle mainBundle].infoDictionary[key];
+//    QYLog(@"%@",info);
+//    
+//    if ([info isEqualToString:lastVersion]) {
+//        self.window.rootViewController = [[QYTabbarVIewController alloc] init];
+//    }else{
+//        
+//        self.window.rootViewController = [[QYNewFeatureViewController alloc] init];
+//        //将版本号存进沙盒
+//        [[NSUserDefaults standardUserDefaults] setObject:info forKey:key];
+//        //把文件立即同步到沙盒中
+//        [[NSUserDefaults standardUserDefaults] synchronize];
+//    }
 
     //3 显示窗口
     [self.window makeKeyAndVisible];
